@@ -1,0 +1,330 @@
+{{ define "main" }}
+{{/*  hero section  */}}
+{{ with .Params.hero_section }}
+{{ if .enable }}
+{{ $hero := "images/dev/hero-cover.png" | relURL }}
+<section class="h-[900px] lg:h-[915px] flex justify-center items-center w-full bg-bottom bg-no-repeat bg-[url({{ $hero }})]">
+    <div class="lg:max-w-[683px] px-4 mx-auto space-y-10 text-center">
+        <div class="space-y-4">
+            <h1 class="font-urbanist text-white font-black text-[64px] lg:text-[80px] leading-[68px] lg:leading-[72px] tracking-[-2%] uppercase">{{ .title | safeHTML }}</h1>
+            <p class="font-urbanist text-white font-medium text-[22px] leading-[30px]">{{ .description | safeHTML }}</p>
+        </div>
+        <div>
+            <a 
+                href='{{ "/#form" | relURL }}'
+                class="px-8 py-3 bg-light-sky text-white rounded-full inline-flex justify-center items-center gap-x-2 group">
+                <span class="font-urbanist font-semibold leading-6">Contact Us</span>
+                <svg class="size-3 lg:size-3 text-inherit transition-all group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path class="fill-current" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/*  end hero section  */}}
+
+{{/*  about section  */}}
+{{ with .Params.about_section }}
+{{ if .enable }}
+<section class="px-4 py-16">
+    <div class="container mx-auto lg:flex justify-center items-center">
+        <div class="space-y-6 lg:w-1/2 lg:mr-40">
+            <div class="space-y-4">
+                <h3 class="font-urbanist font-bold text-[40px] lg:text-[56px] leading-12 lg:leading-16 tracking-[-3%] text-black">{{ .title | safeHTML }}<h3>
+                <p class="font-urbanist font-medium text-lg leading-7 tracking-[1%] text-black">{{ .pre_quote | safeHTML }}</p>
+            </div>
+            <div class="flex items-center gap-x-2.5 p-2.5 bg-light-slate-gray w-fit">
+                <div>
+                    <div class="size-7.5 rounded-full bg-light-sky flex justify-center items-center">
+                        {{ $quotes := "images/dev/quotes.svg" | relURL }}
+                        <div class="size-4">
+                            <img src="{{ $quotes }}" class="size-full object-contain">
+                        </div>
+                    </div>
+                </div>
+                <span class="font-urbanist italic font-semibold text-xl leading-7 tracking-[-1%] text-black">“{{ .quote }}”</span>
+            </div>
+            <p class="font-urbanist font-medium text-lg leading-7 tracking-[1%] text-black">{{ .post_quote | safeHTML }}</p>
+        </div>
+        <div class="lg:w-1/2">
+            {{ $solution_img := "images/solutions-img.png" | relURL }}
+            <img src="{{ $solution_img }}" alt="" class="size-full">
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/*  end about section  */}}
+
+{{/*  cta section  */}}
+<section class="px-4 py-16 bg-gradient-to-br from-light-sky to-dark-sky">
+    <div class="max-w-[398px] lg:max-w-[963px] mx-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center text-center gap-y-6">
+        {{ $right_arrow := "images/dev/right-curvey-arrow.svg" | relURL }}
+        <h3 class="font-urbanist text-[28px] leading-[37px] tracking-[-1%] text-black uppercase">Let’s make your game <span class="font-black">unforgettable.</span></h3>
+        <div class="hidden lg:block">
+            <img src="{{ $right_arrow }}" alt="" class="w-full object-contain">
+        </div>
+        <a 
+            href='{{ "/#form" | relURL }}'
+            class="px-8 py-4 inline-flex justify-center items-center gap-x-2 rounded-full bg-night-gray text-white group">
+            <span class="font-urbanist font-semibold leading-4">Contact us</span>
+            <svg class="size-3 lg:size-3 text-inherit transition-all group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path class="fill-current" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+            </svg>
+        </a>
+    </div>
+</section>
+{{/*  end cta section  */}}
+
+{{/*  services section  */}}
+{{ with .Params.services_section }}
+{{ if .enable }}
+<section class="px-4 py-16 bg-dark-blue relative">
+    {{ $services_bg := "images/dev/services-bg.png" | relURL }}
+    <img src="{{ $services_bg }}" alt="" class="absolute left-0 right-0 bottom-0 size-full">
+    <div class="container mx-auto space-y-10 relative z-10">
+        <div class="space-y-4 text-center lg:max-w-[690px] mx-auto">
+            <h3 class="font-urbanist font-bold text-[40px] lg:text-[56px] leading-12 lg:leading-16 tracking-[-3%] text-white">{{ .title | safeHTML }}</h3>
+            <p class="font-urbanist font-medium text-lg leading-7 tracking-[-1%] text-white">{{ .description | safeHTML }}</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-7.5">
+            {{ range .boxes }}
+            <div class="border-gradient after:rounded-lg p-[1px]">
+                <div class="space-y-4 p-7 size-full bg-gradient-to-tl from-dark-blue to-light-blue from-60% rounded-lg relative z-10">
+                    <div class="flex gap-x-4 items-center h-1/4">
+                        <div>
+                            <div class="size-14">
+                                <img src="{{ .icon | relURL }}" alt="" class="size-full object-contain">
+                            </div>
+                        </div>
+                        <h4 class="font-urbanist font-bold text-2xl leading-[30px] text-white">{{ .title | safeHTML }}</h4>
+                    </div>
+                    <p class="font-urbanist font-medium text-lg leading-7 tracking-[1%] text-white">{{ .description | safeHTML }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/*  end services section  */}}
+
+{{/*  projects section  */}}
+{{ with .Params.projects_section }}
+{{ if .enable }}
+<section class="px-4 py-16">
+    <div class="container mx-auto">
+        <div class="space-y-4 text-center lg:max-w-[690px] mx-auto">
+            <h3 class="font-urbanist font-bold text-[40px] lg:text-[56px] leading-12 lg:leading-16 tracking-[-3%] text-black">{{ .title | safeHTML }}</h3>
+            <p class="font-urbanist font-medium text-lg leading-7 tracking-[1%] text-black">{{ .description | safeHTML }}</p>
+        </div>
+        <div class="lg:flex justify-center items-center lg:gap-x-5">
+            <div>
+                {{ $projects_img := "images/projects-img.png" | relURL }}
+                {{ $character := "images/dev/project-character.png" | relURL }}
+                {{ $char_shadow := "images/dev/character-shadow.png" | relURL }}
+                {{ $project_card := "images/dev/project-card.png" | relURL }}
+                <img src="{{ $projects_img }}" alt="" class="size-full object-contain lg:hidden">
+                <div class="hidden lg:flex justify-center items-end">
+                    <div class="relative z-10">
+                        <img src="{{ $character }}" class="w-[414px] h-[638px] object-contain">
+                        <img src="{{ $char_shadow }}" class="size-full -mt-40">
+                    </div>
+                    <img src="{{ $project_card }}" class="max-w-[583px] h-[439px] -ml-24">
+                </div>
+            </div>
+            <div class="lg:w-[502px] lg:flex flex-col-reverse lg:gap-y-16">
+                <div class="hidden gap-x-6 items-center justify-center lg:justify-start">
+                    {{ $right_arrow := "images/dev/right-arrow.svg" | relURL }}
+                    {{ $left_arrow := "images/dev/left-arrow.svg" | relURL }}
+                    <div class="size-10 rounded-full border border-black flex justify-center items-center cursor-pointer">
+                        <div class="w-[11.38px] h-14.[16px]">
+                            <img src="{{ $left_arrow }}" alt="" class="size-full object-contain">
+                        </div>
+                    </div>
+                    <div class="size-10 rounded-full border border-black flex justify-center items-center cursor-pointer">
+                        <div class="w-[11.38px] h-14.[16px]">
+                            <img src="{{ $right_arrow }}" alt="" class="size-full object-contain">
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div class="size-12 hidden justify-center items-center rounded-full border border-dark-slate-gray">
+                        <span class="font-urbanist font-extrabold text-xl text-dim-black">01</span>
+                    </div>
+                    {{ with .project }}
+                    <div class="space-y-10">
+                        <div class="space-y-5">
+                            <div class="space-y-1">
+                                <h3 class="font-urbanist font-extrabold text-[40px] leading-12 text-dim-black uppercase">{{ .title | safeHTML }}</h3>
+                                <p class="font-urbanist font-medium text-lg leading-[30px] tracking-[1%] text-dim-black">{{ .description | safeHTML }}</p>
+                            </div>
+                            <ul class="space-y-5">
+                                {{ range .list }}
+                                <li class="flex gap-x-3 items-center">
+                                    {{ $list := "images/dev/list-icon.svg" | relURL }}
+                                    <div>
+                                        <img src="{{ $list }}" class="size-5 object-contain">
+                                    </div>
+                                    <span class="font-urbanist text-lg leading-[30px] text-dim-black">{{ . | safeHTML }}</span>
+                                </li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        <div class="flex gap-x-4 items-center">
+                            <a 
+                                href=""
+                                class="px-8 py-3 rounded-full inline-flex gap-x-2 justify-center items-center bg-black">
+                                <span class="font-urbanist font-bold leading-6 text-white">iOS</span>
+                                {{ $apple := "images/dev/apple-icon.svg" | relURL }}
+                                <img src="{{ $apple }}" class="size-5">
+                            </a>
+                            <a 
+                                href=""
+                                class="px-8 py-3 rounded-full inline-flex gap-x-2 justify-center items-center bg-green">
+                                {{ $android := "images/dev/android-icon.svg" | relURL }}
+                                <img src="{{ $android }}" class="size-5">
+                                <span class="font-urbanist font-bold leading-6 text-white">Android</span>
+                            </a>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/*  end projects section  */}}
+
+{{/*  faqs section  */}}
+{{ with .Params.faqs_section }}
+{{ if .enable }}
+<section class="px-4 py-16 bg-dark-blue">
+    <div class="container mx-auto space-y-10">
+        <div class="text-center">
+            <h3 class="font-urbanist font-bold text-[40px] lg:text-[56px] leading-12 lg:leading-16 tracking-[-3%] text-white">{{ .title | safeHTML }}</h3>
+        </div>
+        <ul class="space-y-4 lg:max-w-[1170px] mx-auto">
+            {{ range $i, $p := .faq }}
+            <li class="border-gradient after:rounded-lg p-[1px]">
+                <div class="px-7 py-[21px] bg-gradient-to-tl from-dark-blue to-light-blue from-60% rounded-lg relative z-10" data-faq-id="faq-{{ $i }}">
+                    <button
+                        class="faq-toggle relative flex gap-x-4 justify-between items-start w-full text-left cursor-pointer"
+                        aria-expanded="false" onclick="toggleFAQ(this, 'faq-{{ $i }}')">
+                        <span class="font-urbanist font-bold text-xl leading-[30px] text-white">{{ $p.question | safeHTML }}</span>
+                        <div class="size-6 mt-2">
+                            {{ $plus := "images/dev/plus-icon.svg" | relURL }}
+                            <img src="{{ $plus }}" alt="" class="faq-icon transition-all size-3.5 object-contain">
+                        </div>
+                    </button>
+                    <div class="faq-content transition-all duration-300 ease-in-out max-h-0 overflow-hidden"
+                        style="transition: max-height 0.3s ease-in-out 0s;">
+                        <div class="pt-2 pr-5">
+                            <div class="font-urbanist font-medium text-lg leading-7 tracking-[1%] text-white">
+                                {{ $p.answer | safeHTML }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <script>
+      function toggleFAQ(clickedButton, id) {
+        const faqItems = document.querySelectorAll('[data-faq-id]');
+        let shouldExpandTarget = true;
+    
+        // First pass: determine if the clicked one is already expanded
+        faqItems.forEach(item => {
+          if (item.dataset.faqId === id) {
+            const btn = item.querySelector('.faq-toggle');
+            shouldExpandTarget = btn.getAttribute("aria-expanded") !== "true";
+          }
+        });
+    
+        // Second pass: collapse all, then optionally expand clicked one
+        faqItems.forEach(item => {
+          const btn = item.querySelector('.faq-toggle');
+          const content = item.querySelector('.faq-content');
+          const icon = item.querySelector('.faq-icon');
+    
+          const isTarget = item.dataset.faqId === id;
+    
+          if (btn && content && icon) {
+            btn.setAttribute("aria-expanded", "false");
+            content.style.maxHeight = "0";
+            icon.classList.remove('rotate-45');
+    
+            // Expand only the target item if needed
+            if (isTarget && shouldExpandTarget) {
+              btn.setAttribute("aria-expanded", "true");
+              content.style.maxHeight = content.scrollHeight + "px";
+              icon.classList.add('rotate-45');
+            }
+          }
+        });
+      }
+    </script>
+</section>
+{{ end }}
+{{ end }}
+{{/*  end faqs section  */}}
+
+{{/*  form section  */}}
+{{ with .Params.contact_section }}
+{{ if .enable }}
+<section class="pt-16 lg:pt-24">
+    <div class="container mx-auto space-y-10 lg:grid lg:grid-cols-2 lg:gap-x-32">
+        <div class="space-y-5 px-4">
+            <div class="space-y-3">
+                <h3 class="font-urbanist font-bold text-4xl lg:text-5xl leading-10 lg:leading-12 tracking-[-3%] text-black">{{ .title | safeHTML }}</h3>
+                <p class="font-urbanist font-medium text-lg leading-7 tracking-[1%] text-black">{{ .description | safeHTML }}</p>
+            </div>
+            <div class="space-y-7">
+                {{ $len := (len .points) }}
+                {{ range $i, $p := .points }}
+                <div class="flex gap-x-4 items-center">
+                    <div>
+                        <div class="size-14 rounded-full bg-light-gray border border-off-white flex justify-center items-center relative {{ if ne (add $i 1) $len }}after-line{{ end }}">
+                            <span class="font-urbanist font-extrabold text-xl text-black">{{ add $i 1 }}</span>
+                        </div>
+                    </div>
+                    <p class="font-urbanist font-medium text-lg leading-7 tracking-[1%] text-black"><strong>{{ .key | safeHTML }} – </strong>{{ .value | safeHTML }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        <form netlify name="Contact" method="POST" action="" id="form" class="px-4 py-8 lg:p-8 scroll-mt-32 space-y-6 bg-light-gray border border-off-white rounded-t-2xl">
+            <h3 class="font-urbanist font-bold text-4xl lg:text-[40px] tracking-[-3%] text-black">Let's talk about your project</h3>
+            <div class="gap-y-2 flex flex-col">
+                <label for="name" class="font-urbanist font-medium leading-5 text-stone">Full Name</label>
+                <input type="text" name="Name" id="name" required placeholder="Enter Full Name" class="p-3 bg-white border border-darker-gray rounded-lg font-urbanist leading-5.5 text-stone">
+            </div>
+            <div class="gap-y-2 flex flex-col">
+                <label for="email" class="font-urbanist font-medium leading-5 text-stone">Email</label>
+                <input type="email" name="Email" id="email" required placeholder="Enter Email" class="p-3 bg-white border border-darker-gray rounded-lg font-urbanist leading-5.5 text-stone">
+            </div>
+            <div class="gap-y-2 flex flex-col">
+                <label for="message" class="font-urbanist font-medium leading-5 text-stone">Message</label>
+                <textarea id="message" name="Message" placeholder="Enter Message" rows="4" class="p-3 bg-white border border-darker-gray rounded-lg font-urbanist leading-5.5 text-stone"></textarea>
+            </div>
+            <button type="submit" class="px-8 py-3 bg-light-sky flex justify-center items-center gap-x-2 font-urbanist font-semibold leading-6 text-white rounded-full cursor-pointer group">
+                <span>Submit</span>
+                <svg class="size-3 lg:size-3 text-inherit transition-all group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path class="fill-current" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{/*  end form section  */}}
+{{ end }}

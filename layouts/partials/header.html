@@ -1,0 +1,216 @@
+<header class="fixed w-full bg-navy z-50">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center w-full">
+        <nav>
+            <a href="{{ site.BaseURL }}" class="w-[158.03px] h-10"><img src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }} Logo" class="size-full"></a>
+        </nav>
+        <button class="size-8 cursor-pointer toggle-menu lg:hidden">
+            {{ $hamburger := "images/dev/hamburger.svg" | relURL }}
+            {{ $close := "images/dev/close.svg" | relURL }}
+            <img src="{{ $hamburger }}" class="size-full object-contain open-menu">
+            <img src="{{ $close }}" class="size-[13.33px] object-contain mx-auto hidden close-menu">
+        </button>
+        <div class="absolute lg:static top-12 left-0 w-full lg:w-fit translate-x-full lg:translate-x-0 transition-all duration-500 menu">
+            <div class="border-gradient-responsive size-full p-[1px] lg:p-0">
+                <div class="bg-gradient-to-tl from-dark-blue to-light-blue from-60% lg:bg-none size-full relative lg:static z-10">
+                    <div class="size-full px-4 py-12 lg:p-0 flex flex-col gap-y-4">
+                        {{ $current := . }}
+                        {{ with site.Menus.main }}
+                        <ul class="flex flex-col gap-y-8 lg:flex-row gap-x-12 items-center">
+                            {{ range $i, $p := . }}
+                            {{ $menu := .URL | absURL }}
+                            {{ $page := $current.RelPermalink | absURL }}
+                            {{ $active := eq $menu $page }}
+                            {{ if .HasChildren }}
+                            {{ $id := replaceRE "[-!@#$%^&*/\\\\ ]" "_" .Name }}
+                            {{ $id := $id | urlize | safeJS }}
+                            <li class="flex flex-col gap-y-4 w-full lg:w-fit">
+                                <button id="dropdown-button-{{ $id }}" class="flex justify-between lg:gap-2 items-center cursor-pointer w-full">
+                                    <span class="font-urbanist text-sm leading-6 tracking-[7%] text-white uppercase">{{ .Name }}</span>
+                                    <svg class="size-2.5 lg:size-3 text-light-slate transition-all" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path class="fill-current" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                                    </svg>
+                                </button>
+                                <ul class="transition-all hidden lg:block lg:w-[600px] lg:absolute lg:top-10 lg:after:rounded-b-lg lg-border-gradient lg:p-[1px] lg:opacity-0 lg:-translate-x-3 lg:pointer-events-none" id="dropdown-{{ $id }}">
+                                    <div class="w-full px-4 flex flex-col gap-y-5 lg:gap-x-4 lg:bg-gradient-to-tl lg:from-dark-blue lg:to-light-blue lg:from-60% lg:rounded-b-lg lg:grid lg:grid-cols-2 lg:relative lg:z-10 lg:p-6.5">
+                                        {{ range .Children }}
+                                        {{ if .HasChildren }}
+                                        {{ $id := replaceRE "[-!@#$%^&*/\\\\ ]" "_" .Name }}
+                                        {{ $id := $id | urlize | safeJS }}
+                                        <li class="flex flex-col gap-y-4 lg:relative">
+                                            <button id="dropdown-button-{{ $id }}" class="flex justify-between items-center cursor-pointer w-full">
+                                                <span class="font-urbanist text-sm leading-6 tracking-[7%] text-white uppercase">{{ .Name }}</span>
+                                                <svg class="size-2.5 text-light-slate transition-all" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                                    <path class="fill-current" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                                                </svg>
+                                            </button>
+                                            <ul class="transition-all hidden lg:block lg:w-[300px] lg:absolute lg:top-7 lg:after:rounded-lg lg-border-gradient lg:p-[1px] lg:opacity-0 lg:-translate-x-3 lg:pointer-events-none" id="dropdown-{{ $id }}">
+                                                <div class="w-full px-4 flex flex-col gap-y-5 lg:gap-x-4 lg:bg-gradient-to-tl lg:from-dark-blue lg:to-light-blue lg:from-60% lg:rounded-lg lg:relative lg:z-10 lg:p-6.5">
+                                                    {{ range .Children }}
+                                                    <li><a href="{{ .URL }}" class="font-urbanist text-sm leading-6 tracking-[7%] text-white uppercase">{{ .Name }}</a></li>
+                                                    {{ end }}
+                                                </div>
+                                            </ul>
+                                            <script>
+                                                document.addEventListener('DOMContentLoaded', () => {
+                                                    const mql{{ $id }} = window.matchMedia("(max-width: 1023px)");
+                                                    const button{{ $id }} = document.getElementById("dropdown-button-{{ $id }}");
+                                                    const dropdown{{ $id }} = document.getElementById("dropdown-{{ $id }}");
+                                        
+                                                    if (mql{{ $id }}.matches) {
+                                                        button{{ $id }}.addEventListener('click', function () {
+                                                            dropdown{{ $id }}.classList.toggle('hidden');
+                                                            dropdown{{ $id }}.classList.toggle('flex');
+                                                            this.children[1].classList.toggle('rotate-90');
+                                                            this.children[1].classList.toggle('text-light-slate');
+                                                            this.children[1].classList.toggle('text-white');
+                                                        });
+                                                    };
+
+                                                    if (!mql{{ $id }}.matches) {
+                                                        let isHoveringButton = false;
+                                                        let isHoveringDropdown = false;
+                                      
+                                                        const showDropdown = () => {
+                                                            dropdown{{ $id }}.classList.remove("lg:opacity-0", "lg:-translate-x-3", "lg:pointer-events-none");
+                                                            dropdown{{ $id }}.classList.add("lg:opacity-100", "lg:pointer-events-auto");
+                                                            button{{ $id }}.children[1].classList.remove('text-light-slate');
+                                                            button{{ $id }}.children[1].classList.add('text-white');
+                                                        };
+                                      
+                                                        const hideDropdown = () => {
+                                                            if (!isHoveringButton && !isHoveringDropdown) {
+                                                                dropdown{{ $id }}.classList.remove("lg:opacity-100", "lg:pointer-events-auto");
+                                                                dropdown{{ $id }}.classList.add("lg:opacity-0", "lg:-translate-x-3", "lg:pointer-events-none");
+                                                                button{{ $id }}.children[1].classList.remove('text-white');
+                                                                button{{ $id }}.children[1].classList.add('text-light-slate');
+                                                            };
+                                                        };
+                
+                                                        // Button hover
+                                                        button{{ $id }}.addEventListener("mouseenter", () => {
+                                                            isHoveringButton = true;
+                                                            showDropdown();
+                                                        });
+                                        
+                                                        button{{ $id }}.addEventListener("mouseleave", () => {
+                                                            isHoveringButton = false;
+                                                            setTimeout(hideDropdown, 100); // allow time to reach dropdown
+                                                        });
+                                        
+                                                        // Dropdown hover
+                                                        dropdown{{ $id }}.addEventListener("mouseenter", () => {
+                                                            isHoveringDropdown = true;
+                                                        });
+                                        
+                                                        dropdown{{ $id }}.addEventListener("mouseleave", () => {
+                                                            isHoveringDropdown = false;
+                                                            setTimeout(hideDropdown, 100);
+                                                        });
+                                                    };
+                                                });
+                                            </script>
+                                        </li>
+                                        {{ else }}
+                                        <li><a href="{{ .URL }}" class="font-urbanist text-sm leading-6 tracking-[7%] text-white uppercase">{{ .Name }}</a></li>
+                                        {{ end }}
+                                        {{ end }}
+                                    </div>
+                                </ul>
+                            </li>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', () => {
+                                    const mql{{ $id }} = window.matchMedia("(max-width: 1023px)");
+                                    const button{{ $id }} = document.getElementById("dropdown-button-{{ $id }}");
+                                    const dropdown{{ $id }} = document.getElementById("dropdown-{{ $id }}");
+                        
+                                    if (mql{{ $id }}.matches) {
+                                        button{{ $id }}.addEventListener('click', function () {
+                                            dropdown{{ $id }}.classList.toggle('hidden');
+                                            dropdown{{ $id }}.classList.toggle('flex');
+                                            this.children[1].classList.toggle('rotate-90');
+                                            this.children[1].classList.toggle('text-light-slate');
+                                            this.children[1].classList.toggle('text-white');
+                                        });
+                                    };
+
+                                    if (!mql{{ $id }}.matches) {
+                                        let isHoveringButton = false;
+                                        let isHoveringDropdown = false;
+                      
+                                        const showDropdown = () => {
+                                            dropdown{{ $id }}.classList.remove("lg:opacity-0", "lg:-translate-x-3", "lg:pointer-events-none");
+                                            dropdown{{ $id }}.classList.add("lg:opacity-100", "lg:pointer-events-auto");
+                                            button{{ $id }}.children[1].classList.remove('text-light-slate');
+                                            button{{ $id }}.children[1].classList.add('text-white');
+                                        };
+                      
+                                        const hideDropdown = () => {
+                                            if (!isHoveringButton && !isHoveringDropdown) {
+                                                dropdown{{ $id }}.classList.remove("lg:opacity-100", "lg:pointer-events-auto");
+                                                dropdown{{ $id }}.classList.add("lg:opacity-0", "lg:-translate-x-3", "lg:pointer-events-none");
+                                                button{{ $id }}.children[1].classList.remove('text-white');
+                                                button{{ $id }}.children[1].classList.add('text-light-slate');
+                                            };
+                                        };
+
+                                        // Button hover
+                                        button{{ $id }}.addEventListener("mouseenter", () => {
+                                            isHoveringButton = true;
+                                            showDropdown();
+                                        });
+                        
+                                        button{{ $id }}.addEventListener("mouseleave", () => {
+                                            isHoveringButton = false;
+                                            setTimeout(hideDropdown, 100); // allow time to reach dropdown
+                                        });
+                        
+                                        // Dropdown hover
+                                        dropdown{{ $id }}.addEventListener("mouseenter", () => {
+                                            isHoveringDropdown = true;
+                                        });
+                        
+                                        dropdown{{ $id }}.addEventListener("mouseleave", () => {
+                                            isHoveringDropdown = false;
+                                            setTimeout(hideDropdown, 100);
+                                        });
+                                    };
+                                });
+                            </script>
+                            {{ else }}
+                            {{ if $active }}
+                            <li class="w-full lg:w-fit"><a class="font-urbanist font-bold text-sm leading-6 tracking-[7%] text-light-sky cursor-pointer uppercase">{{ .Name }}</a></li>
+                            {{ else }}
+                            <li class="w-full lg:w-fit"><a href="{{ .URL }}" class="font-urbanist text-sm leading-6 tracking-[7%] text-white uppercase">{{ .Name }}</a></li>
+                            {{ end }}
+                            {{ end }}
+                            {{ end }}
+                        </ul>
+                        {{ end }}
+                        {{ with site.Params.header.cta }}
+                        <a 
+                            href="{{ .url }}"
+                            class="py-3 w-full bg-light-sky flex justify-center items-center lg:hidden">
+                            <span class="font-urbanist font-bold leading-6 text-white uppercase">{{ .label }}</span>
+                            <svg class="size-3 text-white ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path class="fill-current" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                            </svg>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:block">
+            {{ with site.Params.header.cta }}
+            <a 
+                href="{{ .url }}"
+                class="w-40 h-10 bg-light-sky font-urbanist font-bold text-sm leading-6 text-white inline-flex items-center justify-center">
+                <span class="uppercase">{{ .label }}</span>
+                <svg class="size-3 text-inherit ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path class="fill-current" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                </svg>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</header>

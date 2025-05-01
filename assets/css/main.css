@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+
+@theme {
+    --font-urbanist: "Urbanist", sans-serif;
+    --font-mulish: "Mulish", sans-serif;
+
+    --color-light-sky: #00BBFC;
+    --color-dark-blue: #07051C;
+    --color-light-blue: #181255;
+    --color-purple: #3C3677;
+    --color-dark-slate: #AFAFAF;
+    --color-light-slate: #CCCCCC;
+    --color-lighter-slate: #DCDDE2;
+    --color-stone: #1D222D;
+    --color-off-white: #EDEDED;
+    --color-white: #FFFFFF;
+    --color-light-gray: #F9F9F9;
+    --color-dark-sky: #00F4FC;
+    --color-darker-gray: #E5E5E7;
+    --color-night-gray: #030210;
+    --color-navy: #0C073A;
+    --color-dim-black: #141414;
+    --color-green: #34A853;
+    --color-dark-slate-gray: #DEDEDE;
+    --color-light-slate-gray: #EEFBFF;
+}
+
+/* custom styles */
+*::selection {
+    @apply bg-light-sky/50 text-white;
+}
+
+.border-gradient {
+    @apply relative;
+}
+
+.border-gradient::after {
+    @apply content-[''] absolute inset-0 bg-gradient-to-tl from-purple to-light-sky from-80%;
+}
+
+.border-gradient-responsive {
+    @apply relative lg:static;
+}
+  
+.border-gradient-responsive::after {
+    @apply content-[''] absolute lg:static inset-0 bg-gradient-to-tl lg:bg-none from-purple to-light-sky from-80%;
+}
+
+.lg-border-gradient::after {
+    @apply lg:content-[''] lg:absolute lg:inset-0 lg:bg-gradient-to-tl lg:from-purple lg:to-light-sky lg:from-80%;
+}
+
+.after-line {
+   @apply before:content-[''] before:absolute before:bg-off-white before:px-[1px] before:h-20 before:-bottom-20;
+}

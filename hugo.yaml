@@ -1,0 +1,155 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'Slowyn Games'
+
+#######################
+######### MAIN MENU
+#######################
+menus:
+  main:
+    - name: Home
+      url: /
+      weight: 10
+
+    - name: About Us
+      url: about/
+      weight: 20
+
+    - name: Services
+      weight: 30
+      hasChildren: true
+
+    - name: Full-Cycle Game Development
+      parent: Services
+      weight: 10
+      hasChildren: true
+
+    - name: Game Development
+      parent: Full-Cycle Game Development
+      url: /
+      weight: 10
+
+    - name: Game Design & Prototyping
+      parent: Services
+      weight: 20
+      hasChildren: true
+
+    - name: Game Design
+      parent: Game Design & Prototyping
+      url: /
+      weight: 10
+
+    - name: Art & Animation
+      parent: Services
+      weight: 30
+      hasChildren: true
+
+    - name: Art
+      parent: Art & Animation
+      url: /
+      weight: 10
+
+    - name: UI/UX Design
+      parent: Services
+      weight: 40
+      hasChildren: true
+
+    - name: Design
+      parent: UI/UX Design
+      weight: 10
+    - name: Music & Sound Effects
+      parent: Services
+      weight: 50
+      hasChildren: true
+
+    - name: Music
+      parent: Music & Sound Effects
+      url: /
+      weight: 10
+
+    - name: Testing & Maintenance
+      parent: Services
+      weight: 60
+      hasChidlren: true
+
+    - name: Testing
+      parent: Testing & Maintenance
+      url: /
+      weight: 10
+
+    - name: Monetization Strategies
+      parent: Services
+      weight: 70
+      hasChidlren: true
+
+    - name: Monetization
+      parent: Monetization Strategies
+      weight: 10
+      url: /
+
+    - name: App Store Optimization
+      parent: Services
+      weight: 80
+      hasChildren: true
+
+    - name: Optimization
+      parent: App Store Optimization
+      url: /
+      weight: 10
+
+    - name: Projects
+      url: projects/
+      weight: 40
+
+
+  footer:
+    - name: About Us
+      url: /
+      weight: 10
+
+    - name: Services
+      url: /
+      weight: 20
+    
+    - name: Projects
+      url: /
+      weight: 30
+
+    - name: Contact Us
+      url: /
+      weight: 40
+
+    - name: FAQ
+      url: /
+      weight: 50
+
+
+#######################
+######### PARAMS
+#######################
+params:
+  logo: images/logo.png
+  header:
+    cta:
+      label: Contact Us
+      url: /#form
+
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+  - source: assets/notwatching/hugo_stats\.json
+    target: css
+  - source: (postcss|tailwind)\.config\.js
+    target: css
+module:
+  mounts:
+  - source: assets
+    target: assets
+  - disableWatch: true
+    source: hugo_stats.json
+    target: assets/notwatching/hugo_stats.json
+
+caches:
+images:
+  dir: :cacheDir/images
