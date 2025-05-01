@@ -134,6 +134,8 @@ params:
       label: Contact Us
       url: /#form
 
+
+enableRobotsTXT: true
 build:
   buildStats:
     enable: true
