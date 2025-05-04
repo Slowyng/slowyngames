@@ -3,7 +3,7 @@
 {{ with .Params.hero_section }}
 {{ if .enable }}
 {{ $hero := "images/dev/hero-cover.png" | relURL }}
-<section class="h-[900px] lg:h-[915px] flex justify-center items-center w-full bg-bottom bg-no-repeat bg-[url({{ $hero }})]">
+<section class="relative top-12 lg:top-[55px] h-[860px] flex justify-center items-center w-full bg-top bg-cover bg-no-repeat bg-[url({{ $hero }})]">
     <div class="lg:max-w-[683px] px-4 mx-auto space-y-10 text-center">
         <div class="space-y-4">
             <h1 class="font-urbanist text-white font-black text-[64px] lg:text-[80px] leading-[68px] lg:leading-[72px] tracking-[-2%] uppercase">{{ .title | safeHTML }}</h1>
@@ -28,7 +28,7 @@
 {{/*  about section  */}}
 {{ with .Params.about_section }}
 {{ if .enable }}
-<section class="px-4 py-16">
+<section id="about-us" class="px-4 py-16">
     <div class="container mx-auto lg:flex justify-center items-center">
         <div class="space-y-6 lg:w-1/2 lg:mr-40">
             <div class="space-y-4">
@@ -50,7 +50,9 @@
         </div>
         <div class="lg:w-1/2">
             {{ $solution_img := "images/solutions-img.png" | relURL }}
-            <img src="{{ $solution_img }}" alt="" class="size-full">
+            {{ $solution_img_2x := "images/about-img-2x.png" | relURL }}
+            <img src="{{ $solution_img }}" class="size-full lg:hidden">
+            <img src="{{ $solution_img_2x }}" class="size-full hidden lg:block">
         </div>
     </div>
 </section>
@@ -81,7 +83,7 @@
 {{/*  services section  */}}
 {{ with .Params.services_section }}
 {{ if .enable }}
-<section class="px-4 py-16 bg-dark-blue relative">
+<section id="our-services" class="px-4 py-16 bg-dark-blue relative">
     {{ $services_bg := "images/dev/services-bg.png" | relURL }}
     <img src="{{ $services_bg }}" alt="" class="absolute left-0 right-0 bottom-0 size-full">
     <div class="container mx-auto space-y-10 relative z-10">
@@ -91,7 +93,7 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-7.5">
             {{ range .boxes }}
-            <div class="border-gradient after:rounded-lg p-[1px]">
+            <div id="{{ .title | urlize }}" class="border-gradient after:rounded-lg p-[1px] scroll-mt-20">
                 <div class="space-y-4 p-7 size-full bg-gradient-to-tl from-dark-blue to-light-blue from-60% rounded-lg relative z-10">
                     <div class="flex gap-x-4 items-center h-1/4">
                         <div>
@@ -115,7 +117,7 @@
 {{/*  projects section  */}}
 {{ with .Params.projects_section }}
 {{ if .enable }}
-<section class="px-4 py-16">
+<section id="our-projects" class="px-4 py-16">
     <div class="container mx-auto">
         <div class="space-y-4 text-center lg:max-w-[690px] mx-auto">
             <h3 class="font-urbanist font-bold text-[40px] lg:text-[56px] leading-12 lg:leading-16 tracking-[-3%] text-black">{{ .title | safeHTML }}</h3>
@@ -131,7 +133,7 @@
                 <div class="hidden lg:flex justify-center items-end">
                     <div class="relative z-10">
                         <img src="{{ $character }}" class="w-[414px] h-[638px] object-contain">
-                        <img src="{{ $char_shadow }}" class="size-full -mt-40">
+                        <img src="{{ $char_shadow }}" class="size-full -mt-40 relative -right-14">
                     </div>
                     <img src="{{ $project_card }}" class="max-w-[583px] h-[439px] -ml-24">
                 </div>
@@ -204,7 +206,7 @@
 {{/*  faqs section  */}}
 {{ with .Params.faqs_section }}
 {{ if .enable }}
-<section class="px-4 py-16 bg-dark-blue">
+<section id="faq" class="px-4 py-16 bg-dark-blue">
     <div class="container mx-auto space-y-10">
         <div class="text-center">
             <h3 class="font-urbanist font-bold text-[40px] lg:text-[56px] leading-12 lg:leading-16 tracking-[-3%] text-white">{{ .title | safeHTML }}</h3>
@@ -280,7 +282,7 @@
 {{/*  form section  */}}
 {{ with .Params.contact_section }}
 {{ if .enable }}
-<section class="pt-16 lg:pt-24">
+<section id="contact" class="pt-16 lg:pt-24">
     <div class="container mx-auto space-y-10 lg:grid lg:grid-cols-2 lg:gap-x-32">
         <div class="space-y-5 px-4">
             <div class="space-y-3">

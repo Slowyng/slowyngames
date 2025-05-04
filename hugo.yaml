@@ -12,7 +12,7 @@ menus:
       weight: 10
 
     - name: About Us
-      url: about/
+      url: /#about-us
       weight: 20
 
     - name: Services
@@ -22,105 +22,67 @@ menus:
     - name: Full-Cycle Game Development
       parent: Services
       weight: 10
-      hasChildren: true
-
-    - name: Game Development
-      parent: Full-Cycle Game Development
-      url: /
-      weight: 10
+      url: /#full-cycle-game-development
 
     - name: Game Design & Prototyping
       parent: Services
       weight: 20
-      hasChildren: true
-
-    - name: Game Design
-      parent: Game Design & Prototyping
-      url: /
-      weight: 10
+      url: /#game-design-prototyping
 
     - name: Art & Animation
       parent: Services
       weight: 30
-      hasChildren: true
-
-    - name: Art
-      parent: Art & Animation
-      url: /
-      weight: 10
+      url: /#art-animation
 
     - name: UI/UX Design
       parent: Services
       weight: 40
-      hasChildren: true
+      url: /#ui/ux-design
 
-    - name: Design
-      parent: UI/UX Design
-      weight: 10
     - name: Music & Sound Effects
       parent: Services
       weight: 50
-      hasChildren: true
-
-    - name: Music
-      parent: Music & Sound Effects
-      url: /
-      weight: 10
+      url: /#music-sound-design
 
     - name: Testing & Maintenance
       parent: Services
       weight: 60
-      hasChidlren: true
-
-    - name: Testing
-      parent: Testing & Maintenance
-      url: /
-      weight: 10
+      url: /#testing-maintenance
 
     - name: Monetization Strategies
       parent: Services
       weight: 70
-      hasChidlren: true
-
-    - name: Monetization
-      parent: Monetization Strategies
-      weight: 10
-      url: /
+      url: /#monetization-strategies
 
     - name: App Store Optimization
       parent: Services
       weight: 80
-      hasChildren: true
-
-    - name: Optimization
-      parent: App Store Optimization
-      url: /
-      weight: 10
+      url: /#app-store-optimization
 
     - name: Projects
-      url: projects/
+      url: /#our-projects
       weight: 40
 
 
   footer:
     - name: About Us
-      url: /
+      url: /#about-us
       weight: 10
 
     - name: Services
-      url: /
+      url: /#our-services
       weight: 20
     
     - name: Projects
-      url: /
+      url: /#our-projects
       weight: 30
 
     - name: Contact Us
-      url: /
+      url: /#contact
       weight: 40
 
     - name: FAQ
-      url: /
+      url: /#faq
       weight: 50
 
 
