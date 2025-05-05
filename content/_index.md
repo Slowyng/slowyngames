@@ -93,14 +93,15 @@ faqs_section:
         - question: Can we hire you for just part of the development (like game design or programming)?
           answer: "Yes, our services are modular. You can hire us for the entire project or just specific parts: programming, game design, UI, QA testing, etc. We adapt to your workflow."
         - question: What are the main stages of game development? 
-          answer: "A game typically goes through the following stages:
+          answer:  |
+A game typically goes through the following stages:
 1. Pre-production: Defining the core idea, goals, target audience, and planning the project.
 2. Design: detailing gameplay mechanics, story, characters, and visual direction.
 3. Prototype: creating a basic, playable version to test core concepts.
 4. Production: full development of code, art, sound, and user interface.
 5. Testing: identifying and fixing bugs, balancing gameplay, and collecting player feedback.
 6. Launch: releasing the game to the public on selected platforms.
-7. Post-launch: ongoing support with updates, bug fixes, and new content."
+7. Post-launch: ongoing support with updates, bug fixes, and new content.
 
 
 ##################
