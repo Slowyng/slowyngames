@@ -90,7 +90,7 @@ menus:
 ######### PARAMS
 #######################
 params:
-  logo: images/logo.png
+  logo: images/slowyn-games-transparent-logo.png
   header:
     cta:
       label: Contact Us
