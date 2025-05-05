@@ -96,11 +96,11 @@ faqs_section:
           answer:  |
             A game typically goes through the following stages:<br>
             1. Pre-production: Defining the core idea, goals, target audience, and planning the project.<br>
-            2. Design: detailing gameplay mechanics, story, characters, and visual direction.
-            3. Prototype: creating a basic, playable version to test core concepts.
-            4. Production: full development of code, art, sound, and user interface.
-            5. Testing: identifying and fixing bugs, balancing gameplay, and collecting player feedback.
-            6. Launch: releasing the game to the public on selected platforms.
+            2. Design: detailing gameplay mechanics, story, characters, and visual direction.<br>
+            3. Prototype: creating a basic, playable version to test core concepts.<br>
+            4. Production: full development of code, art, sound, and user interface.<br>
+            5. Testing: identifying and fixing bugs, balancing gameplay, and collecting player feedback.<br>
+            6. Launch: releasing the game to the public on selected platforms.<br>
             7. Post-launch: ongoing support with updates, bug fixes, and new content.
 
 
