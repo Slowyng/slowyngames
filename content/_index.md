@@ -17,7 +17,7 @@ about_section:
     enable: true
     title: Our Cutting-Edge Game Development Solutions
     pre_quote: <strong>Slowyn Games</strong> is built on a decentralized production model, designed to offer flexibility, responsiveness, and instant access to top specialized talent from around the world. For every project, we assemble a custom-built team, precisely tailored to the needs, goals, and style of the game to be developed.
-    quote: Your vision is unique — your team should be too.
+    quote: Your vision is unique, your team should be too.
     post_quote: We collaborate with world-class designers, developers, and artists to deliver high-quality projects tailored to your vision. Acting as the bridge between creativity and execution, we ensure every game we craft captivates and inspires. 
 
 
