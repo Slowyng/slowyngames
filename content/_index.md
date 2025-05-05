@@ -85,7 +85,7 @@ faqs_section:
         - question: What technologies do you use to develop mobile games?
           answer: We primarily use cross-platform game engines like Unity and Unreal Engine, which allow us to create high-performance games compatible with both iOS and Android. The technology is chosen based on the type of game and your specific requirements.,
         - question: Do you offer graphic design services for games?
-          answer: Yes, we create 2D/3D assets, animations, user interfaces (UI), and custom visual elements adapted to your game’s style. We can also integrate existing assets if you provide them.,
+          answer: "Yes, we create 2D/3D assets, animations, user interfaces (UI), and custom visual elements adapted to your game’s style. We can also integrate existing assets if you provide them.",
         - question: Can you make money with a mobile game?
           answer: "Yes, there are several mobile game monetization strategies: in-app purchases, in-game ads, subscriptions, or premium paid games. We’ll advise you on the best approach based on your concept and target audience.",
         - question: Do you help publish the game on the stores?
