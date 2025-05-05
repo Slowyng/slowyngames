@@ -7,7 +7,7 @@ title: Home
 hero_section:
     enable: ture
     title: Slowyn Games
-    description: A mobile game devs company powered by a decentralized network of top talent.
+    description: A mobile game development company powered by a decentralized network of top talent.
 
 
 ##################
