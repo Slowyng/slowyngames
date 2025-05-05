@@ -81,19 +81,26 @@ faqs_section:
         - question: How much does it cost to develop a mobile game?
           answer: "The cost of mobile game development depends on many factors: gameplay complexity, 2D or 3D graphics, number of features, integrated monetization, and more. On average, a simple mobile game can cost between €10,000 and €20,000, while a more ambitious project can exceed €50,000. We provide personalized quotes tailored to your budget."
         - question: How long does it take to create a mobile game?
-          answer: Suspendisse eget ex non odio ullamcorper sollicitudin. Nullam feugiat nulla diam, eget condimentum mi volutpat eu. Sed vehicula dolor et sem posuere, id mollis justo dictum. Duis a risus ultricies, aliquam tortor et, malesuada metus. Nunc orci mi, consequat ac malesuada et, viverra quis risus. Nullam venenatis,
+          answer: The development time depends on the project's complexity. A small mobile game can be built in 6 to 8 weeks, while a more complete game may take several months. We work in agile sprints to deliver a playable prototype quickly and iterate with you.,
         - question: What technologies do you use to develop mobile games?
-          answer: Suspendisse eget ex non odio ullamcorper sollicitudin. Nullam feugiat nulla diam, eget condimentum mi volutpat eu. Sed vehicula dolor et sem posuere, id mollis justo dictum. Duis a risus ultricies, aliquam tortor et, malesuada metus. Nunc orci mi, consequat ac malesuada et, viverra quis risus. Nullam venenatis,
+          answer: We primarily use cross-platform game engines like Unity and Unreal Engine, which allow us to create high-performance games compatible with both iOS and Android. The technology is chosen based on the type of game and your specific requirements.,
         - question: Do you offer graphic design services for games?
-          answer: Suspendisse eget ex non odio ullamcorper sollicitudin. Nullam feugiat nulla diam, eget condimentum mi volutpat eu. Sed vehicula dolor et sem posuere, id mollis justo dictum. Duis a risus ultricies, aliquam tortor et, malesuada metus. Nunc orci mi, consequat ac malesuada et, viverra quis risus. Nullam venenatis,
+          answer: Yes, we create 2D/3D assets, animations, user interfaces (UI), and custom visual elements adapted to your game’s style. We can also integrate existing assets if you provide them.,
         - question: Can you make money with a mobile game?
-          answer: Suspendisse eget ex non odio ullamcorper sollicitudin. Nullam feugiat nulla diam, eget condimentum mi volutpat eu. Sed vehicula dolor et sem posuere, id mollis justo dictum. Duis a risus ultricies, aliquam tortor et, malesuada metus. Nunc orci mi, consequat ac malesuada et, viverra quis risus. Nullam venenatis,
+          answer: Yes, there are several mobile game monetization strategies: in-app purchases, in-game ads, subscriptions, or premium paid games. We’ll advise you on the best approach based on your concept and target audience.,
         - question: Do you help publish the game on the stores?
-          answer: Suspendisse eget ex non odio ullamcorper sollicitudin. Nullam feugiat nulla diam, eget condimentum mi volutpat eu. Sed vehicula dolor et sem posuere, id mollis justo dictum. Duis a risus ultricies, aliquam tortor et, malesuada metus. Nunc orci mi, consequat ac malesuada et, viverra quis risus. Nullam venenatis,
+          answer: Absolutely. We assist with publishing your game on Google Play and the App Store, including visuals creation, product page writing, ASO optimization, and submission processes with Apple and Google.,
         - question: Can we hire you for just part of the development (like game design or programming)?
-          answer: Suspendisse eget ex non odio ullamcorper sollicitudin. Nullam feugiat nulla diam, eget condimentum mi volutpat eu. Sed vehicula dolor et sem posuere, id mollis justo dictum. Duis a risus ultricies, aliquam tortor et, malesuada metus. Nunc orci mi, consequat ac malesuada et, viverra quis risus. Nullam venenatis,
+          answer: Yes, our services are modular. You can hire us for the entire project or just specific parts: programming, game design, UI, QA testing, etc. We adapt to your workflow.,
         - question: What are the main stages of game development? 
-          answer: Suspendisse eget ex non odio ullamcorper sollicitudin. Nullam feugiat nulla diam, eget condimentum mi volutpat eu. Sed vehicula dolor et sem posuere, id mollis justo dictum. Duis a risus ultricies, aliquam tortor et, malesuada metus. Nunc orci mi, consequat ac malesuada et, viverra quis risus. Nullam venenatis,
+          answer: A game typically goes through the following stages:
+1. Pre-production: Defining the core idea, goals, target audience, and planning the project.
+2. Design: detailing gameplay mechanics, story, characters, and visual direction.
+3. Prototype: creating a basic, playable version to test core concepts.
+4. Production: full development of code, art, sound, and user interface.
+5. Testing: identifying and fixing bugs, balancing gameplay, and collecting player feedback.
+6. Launch: releasing the game to the public on selected platforms.
+7. Post-launch: ongoing support with updates, bug fixes, and new content.,
 
 
 ##################
