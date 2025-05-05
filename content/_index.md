@@ -81,9 +81,9 @@ faqs_section:
         - question: How much does it cost to develop a mobile game?
           answer: "The cost of mobile game development depends on many factors: gameplay complexity, 2D or 3D graphics, number of features, integrated monetization, and more. On average, a simple mobile game can cost between €10,000 and €20,000, while a more ambitious project can exceed €50,000. We provide personalized quotes tailored to your budget."
         - question: How long does it take to create a mobile game?
-          answer: The development time depends on the project's complexity. A small mobile game can be built in 6 to 8 weeks, while a more complete game may take several months. We work in agile sprints to deliver a playable prototype quickly and iterate with you.,
+          answer: "The development time depends on the project's complexity. A small mobile game can be built in 6 to 8 weeks, while a more complete game may take several months. We work in agile sprints to deliver a playable prototype quickly and iterate with you.",
         - question: What technologies do you use to develop mobile games?
-          answer: We primarily use cross-platform game engines like Unity and Unreal Engine, which allow us to create high-performance games compatible with both iOS and Android. The technology is chosen based on the type of game and your specific requirements.,
+          answer: "We primarily use cross-platform game engines like Unity and Unreal Engine, which allow us to create high-performance games compatible with both iOS and Android. The technology is chosen based on the type of game and your specific requirements.",
         - question: Do you offer graphic design services for games?
           answer: "Yes, we create 2D/3D assets, animations, user interfaces (UI), and custom visual elements adapted to your game’s style. We can also integrate existing assets if you provide them.",
         - question: Can you make money with a mobile game?
