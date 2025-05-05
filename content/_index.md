@@ -64,9 +64,9 @@ projects_section:
     description: Discover the projects we've developed, blending creativity with expertise.
     project:
         title: PUNK PIRATES
-        description: 3D online card game combining strategy, deduction, and bluffing, set in a unique cyberpunkpirate universe.
+        description: 3D online card game combining strategy, deduction, and bluffing, set in a unique cyberpunk-pirate universe.
         list:
-            - End-to-End Game Development
+            - Full-Cycle Game Development
             - Monetization via In-App Purchases & Ads
             - Cross-Platform Compatibility
             
