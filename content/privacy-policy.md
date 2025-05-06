@@ -76,4 +76,5 @@ If you have any questions or concerns about this Privacy Policy or how we handle
 
 **[contact@slowyngames.com](mailto:contact@slowyngames.com)**
 
-<div style="margin-bottom: 4rem;"></div>
+<br><br><br>
+
