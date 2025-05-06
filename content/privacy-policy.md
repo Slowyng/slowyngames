@@ -5,7 +5,6 @@ date: 2025-05-06
 draft: false
 ---
 
-# Privacy Policy
 
 **Effective date:** May 6, 2025
 
