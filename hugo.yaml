@@ -86,15 +86,12 @@ menus:
       weight: 50
 
   legal:
-    - name: Copyright
-      url: /demo
-      weight: 10
     - name: Privacy Policy
-      url: /demo
-      weight: 20
+      url: /new
+      weight: 10
     - name: Terms and Condition
       url: /demo
-      weight: 30
+      weight: 20
 
 
 #######################
