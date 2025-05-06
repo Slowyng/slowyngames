@@ -99,6 +99,7 @@ menus:
 #######################
 params:
   logo: images/slowyn-games-transparent-logo.png
+  description: A mobile game development company powered by a decentralized network of top talent.
   header:
     cta:
       label: Contact Us
