@@ -90,7 +90,7 @@ menus:
       url: /privacy-policy
       weight: 10
     - name: Terms and Condition
-      url: /demo
+      url: /terms-and-condition
       weight: 20
 
 
