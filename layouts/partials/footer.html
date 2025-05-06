@@ -28,7 +28,7 @@
                 <ul class="mt-5 flex lg:flex-col lg:gap-y-3">
                     {{ $menu_len := (len site.Menus.footer) }}
                     {{ range $i, $p := site.Menus.footer }}
-                    <li><a href="{{ $p.URL }}" class="text-white/60 hidden lg:block">{{ $p.Name }}</a></li>
+                    <li><a href="{{ $p.URL }}" class="text-white/60 hidden lg:block hover:text-white transition-colors">{{ $p.Name }}</a></li>
                     {{ if eq (add $i 1) $menu_len }}
                     <li><a href="{{ $p.URL }}" class="text-white/60 lg:hidden">&nbsp;{{ $p.Name }}</a></li>
                     {{ else }}
@@ -70,9 +70,14 @@
 
         <div class="flex flex-col lg:flex-row-reverse justify-center lg:justify-between items-center gap-y-5 font-urbanist font-medium text-lg leading-6 text-white/60">
             <ul class="flex">
-                <li><a href="">Copyright |</a></li>
-                <li><a href="">&nbsp;Privacy Policy |</a></li>
-                <li><a href="">&nbsp;Terms and Condition</a></li>
+                {{ $menu_len := (len site.Menus.legal ) }}
+                {{ range $i, $p := site.Menus.legal }}
+                {{ if eq (add $i 1) $menu_len }}
+                <li><a href="{{ $p.URL }}" class="text-white/60 hover:text-white transition-colors">&nbsp;{{ $p.Name }}</a></li>
+                {{ else }}
+                <li><a href="{{ $p.URL }}" class="text-white/60 hover:text-white transition-colors">&nbsp;{{ $p.Name }} |</a></li>
+                {{ end }}
+                {{ end }}
             </ul>
             <p>© 2025 Slowyn Games. All Rights Reserved.</p>
         </div>

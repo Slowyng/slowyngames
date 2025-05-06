@@ -85,6 +85,17 @@ menus:
       url: /#faq
       weight: 50
 
+  legal:
+    - name: Copyright
+      url: /demo
+      weight: 10
+    - name: Privacy Policy
+      url: /demo
+      weight: 20
+    - name: Terms and Condition
+      url: /demo
+      weight: 30
+
 
 #######################
 ######### PARAMS
@@ -95,6 +106,10 @@ params:
     cta:
       label: Contact Us
       url: /#form
+  footer:
+    brand_line: Slowyn Games is built on a decentralized production model, designed to offer flexibility, responsiveness, and instant access to top specialized talent from around the world.
+  social:
+    
 
 
 enableRobotsTXT: true

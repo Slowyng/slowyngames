@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @source "hugo_stats.json";
 
+@plugin "@tailwindcss/typography";
+
 @theme {
     --font-urbanist: "Urbanist", sans-serif;
     --font-mulish: "Mulish", sans-serif;
@@ -53,4 +55,8 @@
 
 .after-line {
    @apply before:content-[''] before:absolute before:bg-off-white before:px-[1px] before:h-20 before:-bottom-20;
+}
+
+.prose * {
+    @apply scroll-mt-20;
 }
