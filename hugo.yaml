@@ -87,7 +87,7 @@ menus:
 
   legal:
     - name: Privacy Policy
-      url: /new
+      url: /privacy-policy
       weight: 10
     - name: Terms and Condition
       url: /demo
