@@ -49,10 +49,8 @@
             <p class="font-urbanist font-medium text-lg leading-7 tracking-[1%] text-black">{{ .post_quote | safeHTML }}</p>
         </div>
         <div class="lg:w-1/2">
-            {{ $solution_img := "images/solutions-img.png" | relURL }}
             {{ $solution_img_2x := "images/about-img-2x.png" | relURL }}
-            <img src="{{ $solution_img }}" class="size-full lg:hidden">
-            <img src="{{ $solution_img_2x }}" class="size-full hidden lg:block">
+            <img src="{{ $solution_img_2x }}" class="size-full">
         </div>
     </div>
 </section>
@@ -137,6 +135,17 @@
                     </div>
                     <img src="{{ $project_card }}" class="max-w-[583px] h-[439px] -ml-24">
                 </div>
+                <!-- <div class="lg:hidden flex items-end justify-center">
+                    <div class="">
+                        <div class="w-[414px] h-[638px]">
+                            <img src="{{ $character }}" class="size-full object-contain">
+                        </div>
+                        <img src="{{ $char_shadow }}" class="size-full relative -mt-60 -right-7">
+                    </div>
+                    <div class="-ml-12 -mb-12">
+                        <img src="{{ $project_card }}" class="max-w-[583px] size-full object-contain">
+                    </div>
+                </div> -->
             </div>
             <div class="lg:w-[502px] lg:flex flex-col-reverse lg:gap-y-16">
                 <div class="hidden gap-x-6 items-center justify-center lg:justify-start">

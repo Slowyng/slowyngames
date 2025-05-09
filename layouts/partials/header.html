@@ -1,5 +1,5 @@
 <header class="fixed w-full bg-navy z-50 h-[60px] flex justify-center">
-    <div class="container mx-auto 2xl:px-24 flex justify-between items-center size-full">
+    <div class="container mx-auto px-4 sm:px-0 2xl:px-24 flex justify-between items-center size-full">
         <nav class="self-stretch">
             <a href="{{ site.BaseURL }}" class="w-[158.03px] h-full inline-block"><img src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }} Logo" class="size-full object-contain"></a>
         </nav>
@@ -9,7 +9,7 @@
             <img src="{{ $hamburger }}" class="size-full object-contain open-menu">
             <img src="{{ $close }}" class="size-[13.33px] object-contain mx-auto hidden close-menu">
         </button>
-        <div class="absolute lg:static top-12 left-0 w-full lg:w-fit translate-x-full lg:translate-x-0 transition-all duration-500 menu">
+        <div class="absolute lg:static top-15 left-0 w-full lg:w-fit lg:translate-x-0 transition-all duration-500 menu translate-x-full">
             <div class="border-gradient-responsive size-full p-[1px] lg:p-0">
                 <div class="bg-gradient-to-tl from-dark-blue to-light-blue from-60% lg:bg-none size-full relative lg:static z-10">
                     <div class="size-full px-4 py-12 lg:p-0 flex flex-col gap-y-4">
