@@ -127,7 +127,7 @@
                 {{ $character := "images/dev/project-character.png" | relURL }}
                 {{ $char_shadow := "images/dev/character-shadow.png" | relURL }}
                 {{ $project_card := "images/dev/project-card.png" | relURL }}
-                <img src="{{ $projects_img }}" alt="" class="size-full object-contain lg:hidden">
+                <!-- <img src="{{ $projects_img }}" alt="" class="size-full object-contain lg:hidden"> -->
                 <div class="hidden lg:flex justify-center items-end">
                     <div class="relative z-10">
                         <img src="{{ $character }}" class="w-[414px] h-[638px] object-contain">
@@ -135,17 +135,17 @@
                     </div>
                     <img src="{{ $project_card }}" class="max-w-[583px] h-[439px] -ml-24">
                 </div>
-                <!-- <div class="lg:hidden flex items-end justify-center">
-                    <div class="">
-                        <div class="w-[414px] h-[638px]">
-                            <img src="{{ $character }}" class="size-full object-contain">
+                <div class="lg:hidden flex">
+                    <div class="relative z-10">
+                        <div>
+                            <img src="{{ $character }}" class="size-full">
                         </div>
-                        <img src="{{ $char_shadow }}" class="size-full relative -mt-60 -right-7">
+                        <img src="{{ $char_shadow }}" class="size-full relative -mt-42 -right-5">
                     </div>
-                    <div class="-ml-12 -mb-12">
-                        <img src="{{ $project_card }}" class="max-w-[583px] size-full object-contain">
+                    <div class="relative -bottom-5 -left-10">
+                        <img src="{{ $project_card }}" class="sizze-full object-contain">
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="lg:w-[502px] lg:flex flex-col-reverse lg:gap-y-16">
                 <div class="hidden gap-x-6 items-center justify-center lg:justify-start">
