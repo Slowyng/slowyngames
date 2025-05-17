@@ -57,7 +57,8 @@ All third-party providers are contractually required to protect your data.
 
 ## 4. Ads and In-App Purchases
 
-The app includes ads and offers in-app purchases. These services may collect anonymized data for targeting and analytics. You can limit ad tracking in your device’s privacy settings.
+The app includes ads and offers in-app purchases. These services may collect anonymized data for targeting and analytics.  
+You can limit ad tracking in your device’s privacy settings.
 
 ---
 
@@ -72,13 +73,15 @@ We take reasonable technical and organizational measures to protect your data, i
 
 ## 6. Data Retention
 
-Your data is retained for as long as your account is active or necessary for app functionality. You can request data deletion at any time (see Section 8).
+Your data is retained for as long as your account is active or necessary for app functionality.  
+You can request data deletion at any time (see Section 8).
 
 ---
 
 ## 7. Minimum Age Requirement
 
-The app is intended for users **aged 13 and above**. We do not knowingly collect personal data from children under 13.
+The app is intended for users **aged 13 and above**.  
+We do not knowingly collect personal data from children under 13.
 
 ---
 
@@ -96,4 +99,5 @@ To exercise these rights, contact us at **contact@slowingames.com**.
 ## 9. Changes to This Policy
 
 We may update this Privacy Policy from time to time. Users will be informed through app updates or notifications.
+
 
