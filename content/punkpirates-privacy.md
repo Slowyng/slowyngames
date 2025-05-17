@@ -1,6 +1,6 @@
 ---
-title: "Terms and Conditions"
-description: "These Terms and Conditions govern your use of Punk Pirates."
+title: "Privacy Policy"
+description: "These Privacy Policy govern your use of Punk Pirates."
 date: 2025-05-06
 draft: false
 layout: minimal
@@ -92,7 +92,7 @@ According to applicable laws (such as the GDPR), you have the right to:
 - Request correction or deletion  
 - Withdraw your consent  
 
-To exercise these rights, contact us at **contact@slowingames.com**.
+To exercise these rights, contact us at **contact@slowyngames.com**.
 
 ---
 
