@@ -1,6 +1,6 @@
 ---
-title: "Terms and Conditions - Punk Pirates"
-description: "These Privacy Policy govern your use of Punk Pirates."
+title: "Terms of Service - Punk Pirates"
+description: "These Terms of Service govern your use of Punk Pirates."
 date: 2025-05-06
 draft: false
 layout: minimal
@@ -9,9 +9,10 @@ layout: minimal
 
 
 
+
 **Last updated:** 18 May 2025
 
-These Terms and Conditions ("Terms") govern your access to and use of the mobile application **Punk Pirates**, developed and published by **Slowyn Games**. By downloading, installing, or using the app, you agree to be bound by these Terms. If you do not accept these Terms, do not use the app.
+These Terms of Service ("Terms") govern your access to and use of the mobile application **Punk Pirates**, developed and published by **Slowyn Games**. By downloading, installing, or using the app, you agree to be bound by these Terms. If you do not accept these Terms, do not use the app.
 
 ---
 
@@ -93,14 +94,33 @@ We are not responsible for the content or practices of third-party services.
 
 We may suspend or terminate your access to the App, without notice, if:
 - You breach these Terms  
-- We are required to do so by law  
-- The App is discontinued  
+- You engage in abusive, fraudulent, or illegal activity  
+- Your behavior disrupts other users or the App environment  
+- We are required to do so for legal or technical reasons  
 
-You may stop using the App at any time by uninstalling it.
+Upon termination, your license is automatically revoked and you must stop using the App.
 
 ---
 
-## 11. Limitation of Liability
+## 11. Updates, Modifications, and Service Availability
+
+We may update, modify, or remove features of the App at any time, including disabling certain functionalities or suspending the service, temporarily or permanently, for maintenance, legal compliance, technical improvements, or business decisions.
+
+We do not guarantee that the App or any part of it will always be available or function without interruption.
+
+If the App is permanently discontinued, we will provide notice via the App or on our official website, when reasonably possible.
+
+---
+
+## 12. Beta Features
+
+The App may include experimental or beta features that are still under development and may be unstable or incomplete. These features are provided "as is" and may be modified or removed at any time without notice.
+
+By using such features, you accept the risk of bugs, data loss, or unexpected behavior.
+
+---
+
+## 13. Limitation of Liability
 
 The App is provided **"as is" and "as available"**, without warranty of any kind.
 
@@ -111,23 +131,25 @@ To the fullest extent permitted by law, **Slowyn Games shall not be liable** for
 
 ---
 
-## 12. Changes to the App and Terms
+## 14. Regional Legal Disclosures
 
-We reserve the right to:
-- Modify or update the App and its features at any time  
-- Change these Terms at our discretion  
+These Terms are designed to comply with global regulations. However, if mandatory local laws apply to you as a consumer, such laws will prevail where applicable.
 
-Changes will be posted in-app or on our website. Continued use after updates implies your acceptance.
+For European Union residents: you may have additional statutory rights under EU consumer law which are not affected by these Terms.
 
 ---
 
-## 13. Governing Law and Jurisdiction
+## 15. Dispute Resolution
 
-These Terms are governed by the laws of **France**. Any dispute arising from their interpretation or execution shall be submitted to the **competent courts of Paris**.
+If you experience any issues, concerns, or wish to raise a complaint related to the App, you must first contact us **via the in-app support form** located in the Settings menu of the game.
+
+We will do our best to resolve the issue in a timely and fair manner.
+
+Only if a resolution cannot be reached through this internal process may you initiate formal legal action. Any legal dispute shall be governed by the laws of France, with exclusive jurisdiction assigned to the courts of Paris, unless otherwise required by mandatory local law.
 
 ---
 
-## 14. Contact
+## 16. Contact
 
-If you have any questions about these Terms, please contact us at:  
+If you have any questions about these Terms, you may contact us at:  
 📧 **contact@slowyngames.com**
