@@ -84,9 +84,11 @@ You may not copy, modify, distribute, or create derivative works based on the Ap
 
 ## 9. Third-Party Services
 
-The App uses third-party services (such as Firebase, AdMob, authentication providers). These services may collect data as described in our [Privacy Policy](./privacy-policy).
+The App may rely on third-party services to enable features such as analytics, authentication, or advertising.
 
-We are not responsible for the content or practices of third-party services.
+These external services may collect and process certain data as part of their operations. We do not control how these third parties operate, and their use of your data is subject to their own terms and privacy policies.
+
+We are not responsible for the content, functionality, or practices of these services. However, we make reasonable efforts to select providers that adhere to industry-standard security and privacy practices.
 
 ---
 
