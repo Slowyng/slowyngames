@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>{{ .Title }}</title>
-    {{ partial "head.html" . }}
-  </head>
-  <body>
-    <main>
-      {{ .Content }}
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Title }}</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #222;
+      margin-top: 2rem;
+    }
+    strong, b {
+      color: #000;
+    }
+    hr {
+      margin: 2rem 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </main>
+</body>
 </html>
