@@ -3,6 +3,7 @@ title: "Terms and Conditions"
 description: "These Terms and Conditions govern your use of the Slowyn Games website and its content."
 date: 2025-05-06
 draft: false
+layout: minimal
 ---
 
 
