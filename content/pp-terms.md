@@ -1,55 +1,99 @@
 ---
 title: "Terms and Conditions"
-description: "These Terms and Conditions govern your use of the Slowyn Games website and its content."
+description: "These Terms and Conditions govern your use of Punk Pirates."
 date: 2025-05-06
 draft: false
 layout: minimal
 ---
 
 
-**Effective date:** May 6, 2025
+# Privacy Policy – Punk Pirates
 
-Welcome to the website of **Slowyn Games** ("we", "our", or "us"). By accessing and using our website [https://www.slowyngames.com](https://www.slowyngames.com), you agree to comply with and be bound by these Terms and Conditions.
+**Last updated:** 18 May 2025
 
-If you do not agree with any part of these Terms, please refrain from using our website.
+At **Slowyn Games**, we take your privacy seriously. This policy explains how we collect, use, and protect your personal information when you use our mobile application **Punk Pirates**, available on Android and iOS.
 
-## 1. Website Purpose
+---
 
-The Slowyn Games website is intended to present our mobile game development services and showcase our previous projects through a portfolio. No products or services are sold directly through the website.
+## 1. Data We Collect
 
-## 2. Use of the Site
+When you use our app, we may collect the following types of information:
 
-You may use this website for personal or professional consultation purposes only. You may not copy, reproduce, distribute, or modify any part of the content without prior written consent from Slowyn Games.
+### a) Authentication via Google, Apple, or Facebook
+- Full name (if available)  
+- Email address  
+- Profile picture  
+- Unique user ID provided by the authentication provider  
 
-The website does not provide account registration or user login functionalities.
+### b) Guest account
+- Automatically generated identifier (no personal data)
 
-## 3. Requests and Proposals
+### c) Technical data
+- Device information (model, OS, language)  
+- IP address (temporarily, for security purposes)  
+- Crash logs, usage data, and analytics (via third-party tools)
 
-If you contact us via our contact form to request information, a quote, or a proposal:
-- Such communications do not constitute a binding agreement.
-- We reserve the right to accept or decline any project request at our discretion.
-- Any quote or offer we send is non-binding until explicitly confirmed by both parties via a signed contract or agreement.
+---
 
-## 4. Intellectual Property
+## 2. How We Use Your Data
 
-All content on this website, including the domain name, company name, and logo, is the intellectual property of Slowyn Games. These elements are protected by applicable laws and may not be reused or reproduced without our explicit permission.
+We use your data to:
+- Enable account login and gameplay  
+- Save your game progress and preferences  
+- Display relevant in-app purchases and ads  
+- Analyze and improve app performance
 
-## 5. Privacy
+---
 
-We process personal data in accordance with our [Privacy Policy](/privacy-policy/). By using the site and submitting the contact form, you consent to the handling of your data as described in that policy.
+## 3. Data Sharing
 
-## 6. Modifications
+We do **not sell or rent** your personal data. Your information may be shared with:
+- Authentication providers (Google, Apple, Facebook)  
+- Third-party services (such as Firebase) for hosting, analytics, and advertising  
 
-We may update these Terms and Conditions at any time without prior notice. Changes will be posted on this page with an updated effective date. Your continued use of the website constitutes acceptance of the updated Terms.
+All third-party providers are contractually required to protect your data.
 
-## 7. Governing Law
+---
 
-These Terms and Conditions are governed by the laws of **France**. Any disputes shall be subject to the exclusive jurisdiction of the courts located in **Paris, France**.
+## 4. Ads and In-App Purchases
 
-## 8. Contact
+The app includes ads and offers in-app purchases. These services may collect anonymized data for targeting and analytics. You can limit ad tracking in your device’s privacy settings.
 
-If you have any questions about these Terms and Conditions, please contact us at:
+---
 
-**[contact@slowyngames.com](mailto:contact@slowyngames.com)**
+## 5. Data Security
 
-<br><br><br>
+We take reasonable technical and organizational measures to protect your data, including:
+- Encrypted communications  
+- Secure storage  
+- Limited access to personal information
+
+---
+
+## 6. Data Retention
+
+Your data is retained for as long as your account is active or necessary for app functionality. You can request data deletion at any time (see Section 8).
+
+---
+
+## 7. Minimum Age Requirement
+
+The app is intended for users **aged 13 and above**. We do not knowingly collect personal data from children under 13.
+
+---
+
+## 8. Your Rights
+
+According to applicable laws (such as the GDPR), you have the right to:
+- Access your personal data  
+- Request correction or deletion  
+- Withdraw your consent  
+
+To exercise these rights, contact us at **contact@slowingames.com**.
+
+---
+
+## 9. Changes to This Policy
+
+We may update this Privacy Policy from time to time. Users will be informed through app updates or notifications.
+
