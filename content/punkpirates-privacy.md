@@ -1,5 +1,5 @@
 ---
-title: "Privacy Policy"
+title: "Privacy Policy - Punk Pirates"
 description: "These Privacy Policy govern your use of Punk Pirates."
 date: 2025-05-06
 draft: false
@@ -7,7 +7,6 @@ layout: minimal
 ---
 
 
-# Privacy Policy – Punk Pirates
 
 **Last updated:** 18 May 2025
 
